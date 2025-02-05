@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'; // Logo dosya uzantısını doğru şekilde belirtin (.png, .jpg vs)
 import LanguageSelector from './LanguageSelector';
@@ -6,10 +6,26 @@ import { useLanguage } from '../context/LanguageContext';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { t, language, setLanguage } = useLanguage();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-black/90 text-white">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+      isScrolled ? 'bg-black' : 'bg-transparent'
+    }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -46,7 +62,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden bg-black">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link 
                 to="/" 

@@ -27,7 +27,7 @@ function Contact() {
         </div>
         <div className="h-[400px] rounded-lg overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.6898366454747!2d8.462799776677012!3d49.49793785901699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc246a57d7c7%3A0x288f5981bc6aa12e!2sH3%2C%2068159%20Mannheim!5e0!3m2!1str!2sde!4v1709766544932!5m2!1str!2sde"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.6898366454747!2d8.462799776677012!3d49.49793785901699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc246a57d7c7%3A0x288f5981bc6aa12e!2sH3%203%2C%2068159%20Mannheim!5e0!3m2!1str!2sde!4v1709766544932!5m2!1str!2sde"
             width="100%"
             height="100%"
             style={{ border: 0 }}
