@@ -1,12 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import donerImage from '../assets/Doner.jpeg';
 import homepageBg2 from '../assets/homepage_bg2.png';
 import gif1 from '../assets/gif/gif1.gif';
 import gif2 from '../assets/gif/gif2.gif';
 import gif3 from '../assets/gif/gif3.gif';
 import SocialMediaPopup from '../components/SocialMediaPopup';
+import home1 from '../assets/home1.jpg';
 
 function Home() {
   const { t } = useLanguage();
@@ -41,7 +41,7 @@ function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center z-0 mx-4 md:mx-0 rounded-2xl md:rounded-none"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${donerImage})`
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${home1})`
           }}
         />
         <div className="relative z-10 text-center px-4">
@@ -171,7 +171,7 @@ function Home() {
         />
 
         {/* GIF'ler */}
-        <div className="flex justify-center gap-8">
+        <div className="flex justify-center gap-8 mb-12">
           <div className="relative group">
             <img 
               src={gif1} 

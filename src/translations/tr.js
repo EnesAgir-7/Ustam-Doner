@@ -6,7 +6,7 @@ export default {
     contact: 'İletişim'
   },
   home: {
-    title: 'Ustam Döner',
+    title: 'Ustam Yaprak Döner',
     subtitle: 'by İsmail Usta',
     menuQuestion: 'Menülerimizi görmek ister misiniz?',
     viewMenu: 'Menüyü Gör',
@@ -16,7 +16,7 @@ export default {
     forYouDescription: 'En kaliteli malzemeler, geleneksel tarifler ve özenli servis ile sizlere unutulmaz bir lezzet deneyimi sunuyoruz.',
     socialTitle: 'SOSYAL MEDYADA BİZİ TAKİP EDİN',
     socialHeading: 'Ekibimizi tanıyın ve daha fazlasını keşfedin!',
-    socialDescription: 'Günlük taze ürünlerimiz, özel tariflerimiz ve etkinliklerimiz hakkında ilk siz haberdar olun. Sosyal medya hesaplarımızı takip ederek Ustam Döner ailesinin bir parçası olun!',
+    socialDescription: 'Günlük taze ürünlerimiz, özel tariflerimiz ve etkinliklerimiz hakkında ilk siz haberdar olun. Sosyal medya hesaplarımızı takip ederek Ustam Yaprak Döner ailesinin bir parçası olun!',
     followButton: 'Bizi Takip Edin',
     complimentaryTitle: 'USTAM\'DAN İKRAMLIKLAR',
     complimentaryHeading: 'Yemek Keyfinize Eşlik Eden Lezzetler',
@@ -140,7 +140,7 @@ export default {
         },
         beefUstam: {
           id: 'doner_005',
-          title: 'Ustam Döner',
+          title: 'Ustam Yaprak Döner',
           description: 'Özel soslar ile hazırlanan yaprak et döner',
           price: '16,90 €'
         },
@@ -602,7 +602,7 @@ export default {
     sections: {
       story: {
         title: 'Hikayemiz',
-        content: '2025 yılında İstanbul\'da küçük bir dükkânda başlayan hikayemiz, bugün Almanya\'da devam ediyor. İsmail Usta\'nın geleneksel döner yapım tekniklerini ve özel baharatlarını kullanarak, otantik Türk lezzetini Mannheim\'a taşıdık. Her gün taze malzemeler ve özenle seçilmiş etlerle hazırladığımız dönerlerimiz, müşterilerimizin vazgeçilmezi haline geldi.'
+        content: '2020 yılında İstanbul\'da küçük bir dükkânda başlayan hikayemiz, bugün Almanya\'da devam ediyor. İsmail Usta\'nın geleneksel döner yapım tekniklerini ve özel baharatlarını kullanarak, otantik Türk lezzetini Mannheim\'a taşıdık. Her gün taze malzemeler ve özenle seçilmiş etlerle hazırladığımız dönerlerimiz, müşterilerimizin vazgeçilmezi haline geldi.'
       },
       mission: {
         title: 'Misyonumuz',
@@ -638,14 +638,14 @@ export default {
       addressLabel: 'Adres',
       address: 'H3 3, 68159 Mannheim',
       phoneLabel: 'Telefon',
-      phone: '+49 621 123456',
+      phone: '+49 621 18151500',
       emailLabel: 'E-posta',
       email: 'info@ustam-doener.de'
     },
     hours: {
-      title: 'Çalışma Saatleri',
-      weekdays: 'Hafta içi: 10:00 - 22:00',
-      weekend: 'Hafta sonu: 10:00 - 23:00'
+      title: 'ÇALIŞMA SAATLERİ',
+      schedule: 'HER GÜN',
+      time: '08:00 - 00:00'
     }
   },
   footer: {

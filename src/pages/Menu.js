@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import restaurantImage from '../assets/Restorant.jpeg';
+import kofte from '../assets/kofte.jpg';
 
 function Menu() {
   const { t } = useLanguage();
@@ -46,7 +46,7 @@ function Menu() {
       <div 
         className="relative h-[40vh] flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${restaurantImage})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${kofte})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}

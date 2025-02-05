@@ -6,7 +6,7 @@ export default {
     contact: 'Kontakt'
   },
   home: {
-    title: 'Ustam Döner',
+    title: 'Ustam Yaprak Döner',
     subtitle: 'by İsmail Usta',
     menuQuestion: 'Möchten Sie unsere Speisekarte sehen?',
     viewMenu: 'Zur Speisekarte',
@@ -16,7 +16,7 @@ export default {
     forYouDescription: 'Mit hochwertigen Zutaten, traditionellen Rezepten und aufmerksamem Service bieten wir Ihnen ein unvergessliches Geschmackserlebnis.',
     socialTitle: 'FOLGEN SIE UNS IN SOZIALEN MEDIEN',
     socialHeading: 'Lernen Sie unser Team kennen und entdecken Sie mehr!',
-    socialDescription: 'Seien Sie der Erste, der von unseren täglich frischen Produkten, speziellen Rezepten und Veranstaltungen erfährt. Folgen Sie uns auf unseren Social-Media-Kanälen und werden Sie Teil der Ustam Döner Familie!',
+    socialDescription: 'Seien Sie der Erste, der von unseren täglich frischen Produkten, speziellen Rezepten und Veranstaltungen erfährt. Folgen Sie uns auf unseren Social-Media-Kanälen und werden Sie Teil der Ustam Yaprak Döner Familie!',
     followButton: 'Folgen Sie uns',
     complimentaryTitle: 'KOSTENLOSE BEILAGEN VON USTAM',
     complimentaryHeading: 'Geschmäcker, die Ihr Essenserlebnis begleiten',
@@ -653,14 +653,14 @@ export default {
       addressLabel: 'Adresse',
       address: 'H3 3, 68159 Mannheim',
       phoneLabel: 'Telefon',
-      phone: '+49 621 123456',
+      phone: '+49 621 18151500',
       emailLabel: 'E-Mail',
       email: 'info@ustam-doener.de'
     },
     hours: {
-      title: 'Öffnungszeiten',
-      weekdays: 'Mo-Fr: 10:00 - 22:00',
-      weekend: 'Sa-So: 10:00 - 23:00'
+      title: 'ÖFFNUNGSZEITEN',
+      schedule: 'TÄGLICH',
+      time: 'von 8:00 bis 00:00 Uhr'
     },
     form: {
       title: 'Kontaktieren Sie uns',
@@ -671,7 +671,7 @@ export default {
     }
   },
   footer: {
-    description: 'Authentische türkische Döner-Tradition in Deutschland seit 2025.',
+    description: 'Authentische türkische Döner-Tradition in Deutschland seit 5.',
     quickLinks: 'Schnellzugriff',
     contact: 'Kontakt',
     followUs: 'Folgen Sie uns',

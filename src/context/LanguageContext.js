@@ -8,13 +8,23 @@ export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState('de');
   const translations = language === 'de' ? de : tr;
 
+  const value = {
+    language,
+    setLanguage,
+    t: translations
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t: translations }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
 }
 
 export function useLanguage() {
-  return useContext(LanguageContext);
+  const context = useContext(LanguageContext);
+  if (context === undefined) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
 } 

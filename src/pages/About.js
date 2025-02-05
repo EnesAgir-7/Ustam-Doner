@@ -39,7 +39,7 @@ function About() {
         <blockquote className="text-xl italic">
           "{t.about.sections.quote.content}"
         </blockquote>
-        <p className="font-['Great_Vibes'] text-2xl text-primary">- İsmail Usta</p>
+        <p className="font-['Great_Vibes'] text-2xl text-primary">- BY İsmail Usta</p>
       </div>
     </div>
   );
