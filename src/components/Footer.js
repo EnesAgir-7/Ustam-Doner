@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
+import DeveloperPopup from './DeveloperPopup';
 
 function Footer() {
   const { t } = useLanguage();
+  const [isDeveloperPopupOpen, setIsDeveloperPopupOpen] = useState(false);
 
   return (
     <footer className="bg-black/90 text-white py-8 mt-auto">
@@ -42,8 +44,10 @@ function Footer() {
               <li>{t.contact.info.email}</li>
               <li className="mt-4">
                 <div className="font-semibold">{t.contact.hours.title}</div>
-                <div>{t.contact.hours.schedule}</div>
-                <div>{t.contact.hours.time}</div>
+                <div>{t.contact.hours.weekdays}</div>
+                <div>{t.contact.hours.weekdaysTime}</div>
+                <div className="mt-1">{t.contact.hours.sunday}</div>
+                <div>{t.contact.hours.sundayTime}</div>
               </li>
             </ul>
           </div>
@@ -71,9 +75,23 @@ function Footer() {
 
         {/* Telif Hakkı */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Ustam Yaprak Döner. {t.footer.rights}</p>
+          <p>
+            &copy; 2025 Ustam Yaprak Döner. {t.footer.rights}
+            <span 
+              onClick={() => setIsDeveloperPopupOpen(true)}
+              className="ml-2 text-primary hover:text-white cursor-pointer transition-colors"
+            >
+              Developed by Enes AGIR
+            </span>
+          </p>
         </div>
       </div>
+
+      {/* Developer Popup */}
+      <DeveloperPopup 
+        isOpen={isDeveloperPopupOpen}
+        onClose={() => setIsDeveloperPopupOpen(false)}
+      />
     </footer>
   );
 }
