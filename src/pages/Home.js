@@ -58,10 +58,10 @@ function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Slider */}
-      <div className="relative h-[60vh] md:h-[80vh] flex items-center justify-center pt-20">
+      <div className="relative h-[60vh] md:h-[80vh] flex items-center justify-center">
         <div 
           className={`absolute inset-0 bg-cover bg-center z-0 mx-4 md:mx-0 rounded-2xl md:rounded-none transition-opacity duration-500
-                     ${isTransitioning ? 'opacity-0' : 'opacity-100'} mt-16`}
+                     ${isTransitioning ? 'opacity-0' : 'opacity-100'} mt-12 md:mt-8`}
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${slides[currentSlide]})`
           }}

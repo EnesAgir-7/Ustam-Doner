@@ -56,12 +56,12 @@ function Menu() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <div 
-        className="relative h-64 md:h-96 bg-cover bg-center mt-16"
+        className="relative h-48 md:h-96 bg-cover bg-center mt-20 md:mt-12"
         style={{ 
           backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${randomSlide})`
         }}
       >
-        <div className="relative z-20 text-center px-4 space-y-6">
+        <div className="relative z-20 h-full flex flex-col justify-center text-center px-4 space-y-6">
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl text-white">
               {t.menu.hero.mainTitle}
