@@ -636,16 +636,18 @@ export default {
     info: {
       title: 'İletişim Bilgileri',
       addressLabel: 'Adres',
-      address: 'H3 3, 68159 Mannheim',
+      address: 'H3, 3 68159 Mannheim',
       phoneLabel: 'Telefon',
       phone: '+49 621 18151500',
       emailLabel: 'E-posta',
-      email: 'info@ustam-doener.de'
+      email: 'info@ustamdoner.de'
     },
     hours: {
       title: 'ÇALIŞMA SAATLERİ',
-      schedule: 'HER GÜN',
-      time: '08:00 - 00:00'
+      weekdays: 'Pazartesi - Cumartesi',
+      weekdaysTime: '11:00 - 00:00',
+      sunday: 'Pazar',
+      sundayTime: '15:00 - 00:00'
     }
   },
   footer: {
@@ -653,6 +655,13 @@ export default {
     quickLinks: 'Hızlı Erişim',
     contact: 'İletişim',
     followUs: 'Bizi Takip Edin',
-    rights: 'Tüm hakları saklıdır.'
+    rights: 'Tüm hakları saklıdır.',
+    developerPopup: {
+      title: 'İletişim Bilgileri',
+      phone: 'Telefon',
+      email: 'E-Posta',
+      previousProjects: 'Önceki Projeler',
+      githubProfile: 'GitHub Profilim'
+    }
   }
 }; 

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import homepageBg2 from '../assets/homepage_bg2.png';
@@ -6,11 +6,32 @@ import gif1 from '../assets/gif/gif1.gif';
 import gif2 from '../assets/gif/gif2.gif';
 import gif3 from '../assets/gif/gif3.gif';
 import SocialMediaPopup from '../components/SocialMediaPopup';
-import home1 from '../assets/home1.jpg';
+import slider1 from '../assets/slider-1.jpg';
+import slider2 from '../assets/slider-2.jpg';
+import slider3 from '../assets/slider-3.jpg';
+import slider4 from '../assets/slider-4.jpg';
 
 function Home() {
   const { t } = useLanguage();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const slides = [slider1, slider2, slider3, slider4];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsTransitioning(true);
+      
+      // 500ms sonra yeni slide'a geç ve transition'ı kapat
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        setIsTransitioning(false);
+      }, 1000);
+    }, 4500);
+
+    return () => clearInterval(timer);
+  }, []);
 
   // Rastgele ürünleri seç
   const randomProducts = useMemo(() => {
@@ -36,12 +57,13 @@ function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Yükseklik ve padding değişiklikleri */}
-      <div className="relative h-[60vh] md:h-[80vh] flex items-center justify-center -mt-16">
+      {/* Hero Section - Slider */}
+      <div className="relative h-[60vh] md:h-[80vh] flex items-center justify-center pt-20">
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0 mx-4 md:mx-0 rounded-2xl md:rounded-none"
+          className={`absolute inset-0 bg-cover bg-center z-0 mx-4 md:mx-0 rounded-2xl md:rounded-none transition-opacity duration-500
+                     ${isTransitioning ? 'opacity-0' : 'opacity-100'} mt-16`}
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${home1})`
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${slides[currentSlide]})`
           }}
         />
         <div className="relative z-10 text-center px-4">
@@ -172,7 +194,7 @@ function Home() {
 
         {/* GIF'ler */}
         <div className="flex justify-center gap-8 mb-12">
-          <div className="relative group">
+          <div className="relative group transition-transform duration-300 hover:rotate-[10deg]">
             <img 
               src={gif1} 
               alt="Döner Animation 1" 
@@ -180,7 +202,7 @@ function Home() {
             />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 rounded-lg"></div>
           </div>
-          <div className="relative group">
+          <div className="relative group transition-transform duration-300 hover:rotate-[10deg]">
             <img 
               src={gif2} 
               alt="Döner Animation 2" 
@@ -188,7 +210,7 @@ function Home() {
             />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300 rounded-lg"></div>
           </div>
-          <div className="relative group">
+          <div className="relative group transition-transform duration-300 hover:rotate-[10deg]">
             <img 
               src={gif3} 
               alt="Döner Animation 3" 

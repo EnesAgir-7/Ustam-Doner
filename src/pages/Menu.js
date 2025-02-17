@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import kofte from '../assets/kofte.jpg';
+import slider1 from '../assets/slider-1.jpg';
+import slider2 from '../assets/slider-2.jpg';
+import slider3 from '../assets/slider-3.jpg';
+import slider4 from '../assets/slider-4.jpg';
 
 function Menu() {
   const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('doner');
+
+  // Slider görselleri için array
+  const slides = useMemo(() => [slider1, slider2, slider3, slider4], []);
+  
+  // Random slide seçimi (component mount edildiğinde bir kere çalışacak)
+  const randomSlide = useMemo(() => {
+    const randomIndex = Math.floor(Math.random() * slides.length);
+    return slides[randomIndex];
+  }, [slides]);
 
   const categories = [
     { id: 'soups', name: t.menu.categories.soups },
@@ -44,14 +56,12 @@ function Menu() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <div 
-        className="relative h-[40vh] flex items-center justify-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${kofte})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+        className="relative h-64 md:h-96 bg-cover bg-center mt-16"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${randomSlide})`
         }}
       >
-        <div className="relative z-10 text-center px-4 space-y-6">
+        <div className="relative z-20 text-center px-4 space-y-6">
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl text-white">
               {t.menu.hero.mainTitle}

@@ -40,14 +40,22 @@ function Contact() {
               {/* Çalışma Saatleri */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-primary mb-4">{t.contact.hours.title}</h3>
-                <p className="text-lg font-semibold">{t.contact.hours.schedule}</p>
-                <p className="text-lg">{t.contact.hours.time}</p>
+                <div className="space-y-2">
+                  <div>
+                    <p className="text-lg font-semibold">{t.contact.hours.weekdays}</p>
+                    <p className="text-lg">{t.contact.hours.weekdaysTime}</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-semibold">{t.contact.hours.sunday}</p>
+                    <p className="text-lg">{t.contact.hours.sundayTime}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Harita */}
-          <div className="h-[400px] rounded-xl overflow-hidden">
+          <div className="h-[400px] rounded-xl overflow-hidden mt-16">
             <iframe
               title="location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2475.8604983906466!2d8.463893776687667!3d49.48893785901821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cc24fb312edb%3A0x920e7a61e665c05c!2sH3%203%2C%2068159%20Mannheim!5e0!3m2!1sen!2sde!4v1710337558613!5m2!1sen!2sde"

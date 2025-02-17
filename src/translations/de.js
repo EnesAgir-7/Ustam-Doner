@@ -617,7 +617,7 @@ export default {
     sections: {
       story: {
         title: 'Unsere Geschichte',
-        content: 'Was 1995 in einem kleinen Laden in Istanbul begann, wird heute in Deutschland fortgesetzt. Mit Meister İsmails traditionellen Döner-Zubereitungstechniken und speziellen Gewürzen haben wir den authentischen türkischen Geschmack nach Mannheim gebracht. Unsere täglich mit frischen Zutaten und sorgfältig ausgewähltem Fleisch zubereiteten Döner sind für unsere Kunden unverzichtbar geworden.'
+        content: 'Was 2020 in einem kleinen Laden in Istanbul begann, wird heute in Deutschland fortgesetzt. Mit Meister İsmails traditionellen Döner-Zubereitungstechniken und speziellen Gewürzen haben wir den authentischen türkischen Geschmack nach Mannheim gebracht. Unsere täglich mit frischen Zutaten und sorgfältig ausgewähltem Fleisch zubereiteten Döner sind für unsere Kunden unverzichtbar geworden.'
       },
       mission: {
         title: 'Unsere Mission',
@@ -651,16 +651,18 @@ export default {
     info: {
       title: 'Kontaktinformationen',
       addressLabel: 'Adresse',
-      address: 'H3 3, 68159 Mannheim',
+      address: 'H3, 3 68159 Mannheim',
       phoneLabel: 'Telefon',
       phone: '+49 621 18151500',
       emailLabel: 'E-Mail',
-      email: 'info@ustam-doener.de'
+      email: 'info@ustamdoner.de'
     },
     hours: {
       title: 'ÖFFNUNGSZEITEN',
-      schedule: 'TÄGLICH',
-      time: 'von 8:00 bis 00:00 Uhr'
+      weekdays: 'Montag - Samstag',
+      weekdaysTime: '11:00 - 00:00',
+      sunday: 'Sonntag',
+      sundayTime: '15:00 - 00:00'
     },
     form: {
       title: 'Kontaktieren Sie uns',
@@ -671,10 +673,17 @@ export default {
     }
   },
   footer: {
-    description: 'Authentische türkische Döner-Tradition in Deutschland seit 5.',
+    description: 'Authentische türkische Döner-Tradition in Deutschland seit 2025.',
     quickLinks: 'Schnellzugriff',
     contact: 'Kontakt',
     followUs: 'Folgen Sie uns',
-    rights: 'Alle Rechte vorbehalten.'
+    rights: 'Alle Rechte vorbehalten.',
+    developerPopup: {
+      title: 'Kontaktinformationen',
+      phone: 'Telefon',
+      email: 'E-Mail',
+      previousProjects: 'Frühere Projekte',
+      githubProfile: 'GitHub Profil'
+    }
   }
 }; 
