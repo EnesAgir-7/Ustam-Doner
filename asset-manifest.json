@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ustam-Doner/static/css/main.fbf00130.css",
-    "main.js": "/Ustam-Doner/static/js/main.2befb5ad.js",
+    "main.js": "/Ustam-Doner/static/js/main.e60cd91a.js",
     "static/media/slider-3.jpg": "/Ustam-Doner/static/media/slider-3.f3e6765f5b13071674dd.jpg",
     "static/media/slider-4.jpg": "/Ustam-Doner/static/media/slider-4.84352dc736a391624f2b.jpg",
     "static/media/gif2.gif": "/Ustam-Doner/static/media/gif2.2c1043ad79ead809fd59.gif",
@@ -13,10 +13,10 @@
     "static/media/homepage_bg2.png": "/Ustam-Doner/static/media/homepage_bg2.9963f49d35fcff7067d2.png",
     "index.html": "/Ustam-Doner/index.html",
     "main.fbf00130.css.map": "/Ustam-Doner/static/css/main.fbf00130.css.map",
-    "main.2befb5ad.js.map": "/Ustam-Doner/static/js/main.2befb5ad.js.map"
+    "main.e60cd91a.js.map": "/Ustam-Doner/static/js/main.e60cd91a.js.map"
   },
   "entrypoints": [
     "static/css/main.fbf00130.css",
-    "static/js/main.2befb5ad.js"
+    "static/js/main.e60cd91a.js"
   ]
 }
